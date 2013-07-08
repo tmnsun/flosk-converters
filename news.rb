@@ -21,8 +21,6 @@ new_categories = {
 news = db_to[:news]
 
 db_from[:jos_blesk_news].each do |news_item|
-	puts news_item[:pretext]
-
 	news.insert(
 		:title => news_item[:title],
 		:announce => news_item[:pretext].to_s,
